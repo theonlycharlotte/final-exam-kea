@@ -1,0 +1,300 @@
+#promo-hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/promo-dejeuner-bg-desktop-v2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+
+}
+
+#promo-hero div {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 33vh;
+}
+
+#promo-hero div .big-header {
+    font-size: 93px;
+}
+
+#promo-hero div span {
+    font-family: meno-banner, serif;
+    font-weight: 300;
+    font-size: 220px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.arrow-down {
+    position: absolute;
+    bottom: 3vh;
+    left: 48.5%;
+    height: 30px;
+}
+
+/*TABLET PROMO HERO BEGIN*/
+@media only screen and (min-width: 640px) and (max-width: 1024px) {
+
+    #promo-hero div {
+    padding-top: 18vh;
+}
+
+
+}
+
+/*MOBILE PROMO HERO BEGIN*/
+
+@media (max-width: 640px) {
+
+    #promo-hero {
+        background-image: url(images/mobile-bg-landing-page.jpg)
+    }
+
+    #promo-hero div {
+        width: 100%;
+    }
+
+    #promo-hero div .big-header {
+    font-size: 50px;
+}
+
+    #promo-hero div span {
+    font-size: 180px;
+}
+
+    .arrow-down {
+    position: absolute;
+    bottom: 3vh;
+    left: 49%;
+    height: 24px;
+
+}
+
+}
+
+
+/*PROMO INFOGRAPHIC SECTION BEGIN*/
+
+#promo-infographic {
+    color: #605959;
+    padding-bottom: 4vh;
+}
+
+.how-it-works-text {
+    text-align: center;
+    color: #605959;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 20px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.info-graphic-grid {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(3, 30vw);
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.bold {
+    font-weight: 400;
+}
+
+.asterisk-text {
+    font-size: 9px;
+    text-align: center;
+}
+
+@media (max-width: 640px) {
+
+    .info-graphic-grid {
+    width: 100vw;
+
+    grid-template-columns: repeat(1, 100vw);
+
+}
+}
+
+/*PROMO INFOGRAPHIC SECTION END*/
+
+/*PROMO DISCOVER MENU BEGIN*/
+
+#promo-discover-menu {
+    height: auto;
+    width: 100vw;
+    background-image: url(images/promo-dejeuner-bg-desktop-v2.jpg);
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    color: white;
+}
+
+
+#promo-discover-menu div p {
+    display: block;
+    width: 38vw;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-weight: 300;
+
+}
+
+
+#promo-discover-menu .big-header {
+    color: white;
+    font-size: 58px;
+    letter-spacing: 1px;
+}
+
+.button {
+    padding-bottom: 16px;
+    padding-top: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-style: solid;
+    border-color: #DBD8D8;
+    border-width: 1px;
+    font-size: 14px;
+    letter-spacing: 3.5px;
+    margin: 0 auto;
+    font-weight: 400;
+    text-decoration: none;
+    color: #EEEEEE;
+}
+
+.button:hover {
+    letter-spacing: 5px;
+    transition: 300ms ease;
+}
+
+@media only screen and (min-width: 640px) and (max-width: 1024px) {
+    #promo-discover-menu {
+        height: auto;
+        padding-bottom: 7vh;
+    }
+
+    #promo-discover-menu div p {
+        width: 70vw;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+
+    #promo-discover-menu {
+        background-image: url(images/mobile-bg-landing-page.jpg);
+        height: auto;
+        padding-bottom: 10vh;
+    }
+
+    #promo-discover-menu .big-header {
+        font-size: 40px;
+    }
+
+    #promo-discover-menu div p {
+        width: 90vw;
+    }
+}
+
+
+
+/*PROMO DISCOVER MENU END*/
+
+
+/*---ANIMATIONS BEGIN---*/
+.heartbeat {
+    -webkit-animation: heartbeat 2s ease-in-out infinite both;
+    animation: heartbeat 2s ease-in-out infinite both;
+}
+
+
+@-webkit-keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out
+    }
+
+    10% {
+        -webkit-transform: scale(.91);
+        transform: scale(.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+
+    17% {
+        -webkit-transform: scale(.98);
+        transform: scale(.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out
+    }
+
+    33% {
+        -webkit-transform: scale(.87);
+        transform: scale(.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out
+    }
+}
+
+@keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out
+    }
+
+    10% {
+        -webkit-transform: scale(.91);
+        transform: scale(.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+
+    17% {
+        -webkit-transform: scale(.98);
+        transform: scale(.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out
+    }
+
+    33% {
+        -webkit-transform: scale(.87);
+        transform: scale(.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out
+    }
+}
+
+
+
+

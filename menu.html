@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Découvrez la carte d'Au Petit Marché. Meilleur burger à Monaco.">
+
+    <!--    favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#800000">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="msapplication-TileColor" content="#9c3535">
+    <meta name="msapplication-config" content="images/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!--    favicon end-->
+
+    <!--    Linked files-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="food-menu.css">
+    <script defer src="navigation.js"></script>
+    <script defer src="nav-hide.js"></script>
+    <!--    Linked files end-->
+
+    <title>Au Petit Marché | Le Menu</title>
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="sticky" id="navbar">
+            <div>
+
+                <a href="index.html"><img class="nav-logo" src="images/logo-burger.svg"></a>
+            </div>
+
+            <ul class="nav-links">
+                <li class="current"><a href="menu.html">MENU</a></li>
+                <li><a href="apropos.html">Á PROPOS</a></li>
+                <li class="hide-on-mobile"><a href="#horaires"><img src="images/hours.svg" class="nav-phone-icon">HORAIRES</a></li>
+                <li><a href="tel:+37797703030"><img src="images/phone.svg" class="nav-phone-icon">+377 97703030</a></li>
+
+
+
+                <div>
+                    <a href="https://www.instagram.com/aupetitmarche_monaco/" target="_blank">
+                        <svg class="nav-some-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 229 229">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #9C3535;
+                                    }
+
+                                </style>
+                            </defs>
+                            <g id="Layer_2" data-name="Layer 2">
+                                <g id="Layer_1-2" data-name="Layer 1">
+                                    <path class="cls-1" d="M167,0H62A62.06,62.06,0,0,0,0,62V167a62.06,62.06,0,0,0,62,62H167a62.06,62.06,0,0,0,62-62V62A62.06,62.06,0,0,0,167,0ZM114.5,177.11H114l0-13.42h.54a50.75,50.75,0,1,0-.56,0V177.1a61.77,61.77,0,1,1,.55,0ZM179,66.63V53.19a4.71,4.71,0,1,0-.34,0c.11,0,.22,0,.33,0V66.63l-.34,0a19.47,19.47,0,1,1,.35,0Z" />
+                                </g>
+                            </g>
+                        </svg></a>
+
+                    <a href="https://www.facebook.com/aupetitmarchemonaco/" target="_blank">
+
+                        <svg class="nav-some-icons" viewBox="0 0 103 206" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M64.375 70.8125V45.0625C64.375 37.9555 70.143 32.1875 77.25 32.1875H90.125V0H64.375C43.0411 0 25.75 17.2911 25.75 38.625V70.8125H0V103H25.75V206H64.375V103H90.125L103 70.8125H64.375Z" fill="#9C3535" />
+                        </svg>
+
+                    </a>
+                </div>
+
+            </ul>
+            <div class="nav-burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--
+        <div class="hero-image-container">
+            <img class="kenburns-top-left" src="images/hero-burger-menu.jpg">
+
+            <div class="menu-text-box">
+                <h1 class="small-header">SERVICE LIVRAISON Á MONACO</h1>
+                <h1 class="big-header">LE MENU</h1>
+            </div>
+        </div>
+-->
+
+        <div class="menu-grid">
+
+            <div class="g1">
+
+
+                <ul class="menu-items-list">
+                    <li id="side-menu-carte">LA CARTE</li>
+                    <li class="burger-nav"><a href="#burgers">BURGERS</a></li>
+                    <li class="frites-nav"><a href="#frites">FRITES</a></li>
+                    <li class="salad-nav"><a href="#salades">SALADES</a></li>
+                    <li class="texmex-nav"><a href="#texmex">TEX MEX</a></li>
+                    <li class="pasta-nav"><a href="#pates">PÂTES</a></li>
+                    <li><a href="">BOISSONS</a></li>
+                    <li><a href="">VIN</a></li>
+
+                </ul>
+
+
+
+            </div>
+            <div class="g2">
+
+                <div class="nested-grid">
+
+
+
+
+                    <div class="a1">
+
+                        <h1 class="small-header">MEILLEUR BURGER Á MONACO</h1>
+                        <a name="burgers">
+                            <h1 class="big-header">LE COIN BURGÉS</h1>
+                        </a>
+                    </div>
+                    <div class="a2">
+
+
+                        <img class="menu-icons" src="images/fries.svg">
+                        <p>
+                            <span class="bold-text">CHOISSISEZ VOS FRITES</span><br>
+                            French fries classiques<br>
+                            Wedges épaisses<br>
+                            Les Eiffels avec la peau<br>
+                        </p>
+
+                    </div>
+                    <div class="a3">
+                        <img class="menu-icons" src="images/condiments.svg">
+                        <p><span class="bold-text">CHOISSISEZ VOS CONDIMENTS</span><br>
+                            Sur simple demande <br>
+                            Ketchup, mayonnaise <br>
+                            ou moutarde</p>
+
+                    </div>
+                    <div class="a4">
+                        <img class="menu-icons" src="images/cuisson.png">
+
+                        <p>
+                            <span class="bold-text">CHOISSISEZ VOTRE CUISSON</span><br>
+                            Bleu, Rosé<br>
+                            À Point<br>
+                            Bien Cuit<br>
+
+                        </p>
+                    </div>
+                    <div class="a5">
+                        <div class="sauce-wrap">
+                            <p>
+                                <span class="bold-text">NOS DÉLICIEUSES SAUCES<br>CONCOCTÉES PAR NOS SOINS</span><br><br>
+
+                                <span class="semi-bold-text">La Sauce Incroyable</span><br class="display-none"> Onctueuse et délicatement moutardé<br><br>
+
+                                <span class="semi-bold-text">La Sauce Grand Jury</span><br class="display-none">
+                                Au BBQ, savoureuse et légèrement sucrée<br><br>
+
+                                <span class="semi-bold-text">La Sauce Miam-Miam</span><br class="display-none"> Cocktail maison, incroyablement bonne!<br>
+                            </p>
+                        </div>
+
+
+
+                        <section data-scroll-nav="burger-nav" name="burger-nav-section" class="scroll-section">
+                            <section class="la-carte-grid">
+
+
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/burger-1.jpg" alt="LE BURGÉ CLASSIQUE Au Petit Marche">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>LE BURGÉ CLASSIQUE</h3>
+                                        Burgé de boeuf, cheddar, salade croquante, tomate, oignon rouge, petits cornichons acidulés &amp; Sauce Incroyable
+                                        <br><br>
+                                    </div>
+                                    <div class="dish-price">€13,90</div>
+
+                                </div>
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/burger-2.jpg" alt="LE MONACOT COT COT Au Petit Marche">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>LE MONACOT COT COT
+                                        </h3>
+                                        Burgé de poulet fermier concocté par nos soins, avocat, brie et poitrine fumée, salade croquante, tomate &amp; sauce Miam-Miam
+                                    </div>
+                                    <div class="dish-price">€17,80</div>
+                                </div>
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/burger-3.jpg" alt="LE HAMBOURGEOIS Au Petit Marche">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>LE HAMBOURGEOIS
+                                        </h3>
+                                        Burgé de bœuf, tomme de Savoie fondue, tomates confites, salade croquante, oignon rouge, persil plat frais &amp; sauce Grand Jury<br><br>
+                                    </div>
+                                    <div class="dish-price">€14,90</div>
+                                </div>
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/burger-1.jpg">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>LE SMOKEHOUSE
+
+                                        </h3>
+                                        Burgé de bœuf, belles tranches de cheddar, bacon fumé, salade croquante, tomate, oignons rouge, cornichons acidulés &amp; sauce ketchup<br><br>
+                                    </div>
+                                    <div class="dish-price">€14,90</div>
+                                </div>
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/burger-4.jpg" alt="LE SUPER CLASSIC TRIPLE CHEESE Au Petit Marché">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>LE SUPER CLASSIC TRIPLE CHEESE
+                                        </h3>
+                                        Burgé de bœuf, trois tranches de cheddar très fondant, salade, tomate, oignon rouge, cornichons acidulés &amp; sauce Miam-Miam<br><br>
+                                    </div>
+                                    <div class="dish-price">€14,90</div>
+                                </div>
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/burger-1.jpg" alt="LE MOBY DICK Au Petit Marché">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>LE MOBY DICK
+                                        </h3>
+                                        Burgé de poisson pané, mozzarella très fondue, petites tomates confites, salade croquante, tomate fraîche, persil &amp; sauce Miam-Miam<br><br>
+                                    </div>
+                                    <div class="dish-price">€14,90</div>
+                                </div>
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/burger-1.jpg" alt="LE BURNING MAN Au Petit Marché">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>LE BURNING MAN
+                                        </h3>
+                                        Burgé de bœuf, un délicieux mélange d’oignons frits, mozzarella, salade croquante et tomates &amp; sauce Miam-Miam<br><br>
+                                    </div>
+                                    <div class="dish-price">€14,90</div>
+                                </div>
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/burger-2.jpg">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>LE SULLIVAN
+
+                                        </h3>
+                                        Burgé de bœuf, mozzarella &amp; bleu fondus, salade croquante, tomate, oignon blanc, cornichons acidulés, ciboulette fraîche &amp; sauce Incroyable<br><br>
+                                    </div>
+                                    <div class="dish-price">€14,90</div>
+                                </div>
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/burger-1.jpg">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>LE SCHROOM
+                                        </h3>
+                                        Burgé de bœuf, délicieuse fondue de champignons, chèvre doux, salade croquante, tomate, oignon rouge &amp; cornichons acidulés &amp; sauce Incroyable<br><br>
+                                    </div>
+                                    <div class="dish-price">€14,90</div>
+                                </div>
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/burger-4.jpg">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>LE MAGNUM COLOSSUS
+                                        </h3>
+                                        Triple burgés de bœuf (300 gr), raclette fondue, bacon fumé, oignon blanc &amp; cornichons acidulés, persil plat &amp; sauce Grand Jury<br><br>
+                                    </div>
+                                    <div class="dish-price">€14,90</div>
+                                </div>
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/burger-3.jpg">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>LE MAGNIFIQUE
+                                        </h3>
+                                        Burgé de bœuf, Raclette de Savoie au lait cru, fine tranche de poitrine fumée, oignons confits, salade croquante &amp; ciboulette ciselée &amp; sauce Grand Jury<br><br>
+                                    </div>
+                                    <div class="dish-price">€14,90</div>
+                                </div>
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/burger-4.jpg">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>LE APOCALYPSE NOW
+                                        </h3>
+                                        Burgé de bœuf, œuf, fines tranches de chorizo, mozzarella fondue, salade croquante, tomate, piments rouge et vert &amp; sauce Miam-Miam<br><br>
+                                    </div>
+                                    <div class="dish-price">€14,90</div>
+                                </div>
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/burger-1.jpg">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>LE CLUSEAU À LA TRUFFE BLANCHE
+
+                                        </h3>
+                                        Burgé de bœuf à l’huile de truffe blanche, mozzarella, champignons &amp; roquette<br><br>
+                                    </div>
+                                    <div class="dish-price">€14,90</div>
+                                </div>
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/burger-2.jpg">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>LE TEDDY EGGY
+                                        </h3>
+                                        Burgé de bœuf, œuf “Sunny Side Up”, belle tranche de cheddar, poitrine fumée, salade croquante, tomate, oignon rouge, cornichons acidulés, persil plat &amp; sauce Incroyable<br><br>
+                                    </div>
+                                    <div class="dish-price">€14,90</div>
+                                </div>
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/burger-3.jpg">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>LE VEGGIE GOODIE
+                                        </h3>
+                                        Chèvre, mozzarella, fondue de champignons, aubergines &amp; poivrons grillés, ciboulette, salade croquante, rondelle de tomate &amp; sauce Grand Jury<br><br>
+                                    </div>
+                                    <div class="dish-price">€14,90</div>
+                                </div>
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/burger-4.jpg">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>LE KILL BILL 2 "LE RETOUR"
+                                        </h3>
+                                        Burgé de bœuf de 180 gr, cheddar &amp; bacon fumé, avocat, piments frais (sur demande), salade croquante, tomate fraîche, oignon rouge, cornichons acidulés &amp; sauce Incroyable<br><br>
+                                    </div>
+                                    <div class="dish-price">€14,90</div>
+                                </div>
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/burger-1.jpg">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>LE BISMARCK
+                                        </h3>
+                                        Deux burgés de viande de bœuf, cheddar &amp; bacon fumé, salade croquante et tomate, oignon blanc et cornichons acidulés, ciboulette &amp; sauce Incroyable<br><br>
+                                    </div>
+                                    <div class="dish-price">€14,90</div>
+                                </div>
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/burger-2.jpg">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>LE CHICKEN RUN
+
+                                        </h3>
+                                        Burgé de poulet fermier concocté par nos soins, mozzarella fondue, salade croquante, tomate, cornichons acidulés, ciboulette &amp; sauce Miam-Miam<br><br>
+                                    </div>
+                                    <div class="dish-price">€14,90</div>
+                                </div>
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/burger-3.jpg">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>LE ROSSINI
+
+                                        </h3>
+                                        Burgé “chic” de bœuf avec une belle tranche de foie gras, oignons confits &amp; roquette<br><br>
+                                    </div>
+                                    <div class="dish-price">€14,90</div>
+                                </div>
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/burger-4.jpg">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>MY DOC'S BEST FRIEND
+
+                                        </h3>
+                                        Burgé de bœuf, chèvre, mozzarella &amp; fourme bleu, bacon au goût fumé, salade, tomate, oignon rouge, cornichons acidulés &amp; sauce Incroyable<br><br>
+                                    </div>
+                                    <div class="dish-price">€14,90</div>
+                                </div>
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/burger-1.jpg">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>LE DUPOND-DUPONT
+
+                                        </h3>
+                                        Burgé de bœuf (100 % origine France), Brie &amp; Camembert, oignons confits, roquette &amp; sauce Miam-Miam<br><br>
+                                    </div>
+                                    <div class="dish-price">€14,90</div>
+                                </div>
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/burger-2.jpg">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>LE KIDS BURGÉ
+
+
+                                        </h3>
+                                        Petit burgé de 80 gr &amp; ketchup. Parfait pour les enfants<br><br>
+                                    </div>
+                                    <div class="dish-price">€14,90</div>
+                                </div>
+
+
+
+
+
+
+
+
+
+                            </section>
+                        </section>
+
+
+
+
+
+                        <section data-scroll-nav="frites-nav" name="frites-nav-section" class="scroll-section">
+                            <a name="frites">
+                                <h1 class="big-header menu-headers">LES FRITES</h1>
+                            </a>
+
+                            <section class="la-carte-grid">
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/fries.jpg">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>FRENCH FRIES CLASSIQUE</h3>
+                                        Pommes frites à la française, fines et croustillantes
+                                        <br><br>
+                                    </div>
+                                    <div class="dish-price">€6,50</div>
+                                </div>
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/fries.jpg">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>LES EIFFELS</h3>
+                                        Grosses pommes frites avec la peau, ultra croustillantes
+                                        <br><br>
+                                    </div>
+                                    <div class="dish-price">€7,50</div>
+                                </div>
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/fries.jpg">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>LES WEDGES VERSION ÉPAISSES </h3>
+                                        Grosses pommes frites coupées à l'ancienne
+                                        <br><br>
+                                    </div>
+                                    <div class="dish-price">€7,50</div>
+                                </div>
+
+                            </section>
+                        </section>
+
+
+
+
+
+                        <section data-scroll-nav="salad-nav" name="salad-nav-section" class="scroll-section">
+
+                            <a name="salades">
+                                <h1 class="big-header menu-headers">LE COIN VERDURE</h1>
+                            </a>
+
+                            <p class="la-carte-body-text">Nos salades sont élaborées à partir de produits de saison et locaux pleins de saveurs et bons pour la santé!</p>
+
+                            <section class="la-carte-grid">
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/salades-1.jpg">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>LA GRANDE 'VERTE'
+                                        </h3>
+
+                                        Mélange de mesclun, tomates cerises et herbes fraîches ciselées &amp; olives
+                                        <br><br>
+                                    </div>
+                                    <div class="dish-price">€6,20</div>
+                                </div>
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/salades-3.jpg">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>LA CLUB 37
+                                        </h3>
+
+                                        Aiguillettes de poulet, avocat, œufs, tomates cerises, maïs doux (sans OGM), Comté &amp; bacon croustillant
+                                        <br><br>
+                                    </div>
+                                    <div class="dish-price">€13,80</div>
+                                </div>
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/salades-2.jpg">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>LA MEXICANA
+
+                                        </h3>
+
+                                        Salade, garnie avec bœuf chili, tomates, cheddar, oignons, guacamole, piments &amp; coriandre
+                                        <br><br>
+                                    </div>
+                                    <div class="dish-price">€13,90</div>
+                                </div>
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/salades-4.jpg">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>LA CAESAR 'MILANO'
+
+                                        </h3>
+
+                                        Romaine croquante, lamelles d’escalope de veau panée, tomates cerises, copeaux parmesan, maïs doux (sans OGM) &amp; sauce Caesar
+                                        <br><br>
+                                    </div>
+                                    <div class="dish-price">€12,90</div>
+                                </div>
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/salades-1.jpg">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>LA MONEGHETTI
+
+                                        </h3>
+
+                                        Chèvre chaud sur pommes acidulées, mesclun, miel, croûtons &amp; petits pignons
+                                        <br><br>
+                                    </div>
+                                    <div class="dish-price">€12,90</div>
+                                </div>
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/salades-2.jpg">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>LA CAESAR 'CLASSIC'
+
+
+                                        </h3>
+
+                                        Romaine croquante, blanc de poulet fermier, petits lardons, tomates confites, copeaux de parmesan, croûtons &amp; l’unique sauce Caesar
+                                        <br><br>
+                                    </div>
+                                    <div class="dish-price">€12,50</div>
+                                </div>
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/salades-3.jpg">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>LA CAPRESE
+                                        </h3>
+                                        Mozzarella Campana, tomates “cœur de bœuf”, petit cœur d’artichaux, tomates confites, basilic frais &amp; olives noires
+                                        <br><br>
+                                    </div>
+                                    <div class="dish-price">€12,80</div>
+                                </div>
+                            </section>
+
+                        </section>
+
+
+
+
+
+                        <section data-scroll-nav="texmex-nav" name="texmex-nav-section" class="scroll-section">
+
+                            <a name="texmex">
+                                <h1 class="big-header menu-headers">TEX MEX</h1>
+                            </a>
+
+                            <p class="la-carte-body-text">Saveurs inspirées par le meilleur du Mexique</p>
+
+                            <section class="la-carte-grid">
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/texmex-1.jpg">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>LE MEGA BURRITO CHILI
+                                        </h3>
+                                        Beœf avec avocat
+                                        <br><br>
+                                    </div>
+                                    <div class="dish-price">€15,80</div>
+                                </div>
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/texmex-2.jpg">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>LE MEGA BURRITO FAJITAS
+                                        </h3>
+
+                                        Avec avocat
+                                        <br><br>
+                                    </div>
+                                    <div class="dish-price">€14,80</div>
+                                </div>
+                            </section>
+
+                        </section>
+
+
+
+
+                        <section data-scroll-nav="pasta-nav" name="pasta-nav-section" class="scroll-section">
+                            <a name="pates">
+                                <h1 class="big-header menu-headers">LES PÂTES</h1>
+                            </a>
+                            <p class="la-carte-body-text">Les Tagliatelles Fraîches aux œufs, avec:</p>
+
+                            <section class="la-carte-grid">
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/pasta-1.jpg">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>SAUCE AUX MORILLES
+
+
+                                        </h3>
+
+
+                                        <br><br>
+                                    </div>
+                                    <div class="dish-price">€14,50</div>
+                                </div>
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/pates-2.jpg">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>SAUCE À LA BOLOGNAISE
+                                        </h3>
+
+
+                                        <br><br>
+                                    </div>
+                                    <div class="dish-price">€14,60</div>
+                                </div>
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/pates-3.jpg">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>SAUCE CARBONARA
+                                        </h3>
+                                        La vraie sans crème
+
+                                        <br><br>
+                                    </div>
+                                    <div class="dish-price">€14,50</div>
+                                </div>
+
+                                <div class="dish-wrapper">
+                                    <div class="dish-img-wrap">
+                                        <img src="images/pates-4.jpg">
+                                    </div>
+
+                                    <div class="dish-text">
+                                        <h3>SAUCE POMODORO ET BASILIC
+
+
+
+
+
+                                        </h3>
+
+
+                                        <br><br>
+                                    </div>
+                                    <div class="dish-price">€14,00</div>
+                                </div>
+
+
+                            </section>
+                        </section>
+
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+        <a id="myBtn">
+            <div class="order-online-button scale-up-center">
+                <figure><img src="images/order-online-icon.svg" class="order-button-icon"></figure>
+                <div>Commandez<br>
+                    en ligne</div>
+            </div>
+        </a>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Yayy! Bientôt, vous pourrez commander en ligne à Au Petit Marché! 🍔 <br><br>En attendant, appelez-nous ☎️ +377&nbsp;97&nbsp;70&nbsp;30&nbsp;30</p>
+            </div>
+
+        </div>
+
+        <div class="footer-logo-wrap">
+            <img src="images/footer-logo.svg">
+        </div>
+
+    </main>
+
+
+    <footer>
+        <div>
+            <h3 class="footer-heading">CONTACT</h3>
+            <address>
+                <img class="align-svg footer-icon-large" src="images/location.svg"><br>
+                AU PETIT MARCHÉ<br>
+                37 BD DU JARDIN EXOTIQUE<br>
+                98000 MONACO<br>
+                MONACO
+            </address><br>
+            <a href="tel:+37797703030
+"><img class="align-svg footer-icon" src="images/phone-icon-white-stroke.svg">&nbsp;+377 97 70 30 30</a>
+        </div>
+        <div>
+            <h3 class="footer-heading"><a name="horaires">HORAIRES 7J/7</a></h3>
+            <p><img class="align-svg footer-icon-large" src="images/scooter.svg"><br>LIVRAISON<br>
+                11h30 - 14h00<br>
+                18h30 - 22h00<br><br>
+
+                <img class="align-svg footer-icon-large" src="images/shop.svg"><br>MAGASIN<br>
+                10h00 - 14h30<br>
+                18h00 - 22h00<br>
+            </p>
+
+
+        </div>
+
+
+        <div>
+            <h3 class="footer-heading">AU PETIT MARCHÉ</h3>
+            <a href="apropos.html" class="footer-link">Á PROPOS</a><br>
+            <a class="footer-link" href="promo-dejeuner.html">PROMO DEJEUNER</a><br>
+            <a href="privacy-policy.html" class="footer-link">PRIVACY POLICY</a><br>
+            <a class="footer-link">COOKIE POLICY</a><br>
+            <a href="https://www.facebook.com/aupetitmarchemonaco/" target="_blank"><img class="align-svg footer-icon-social" src="images/facebook-red.svg"></a>
+            <a href="https://www.instagram.com/aupetitmarche_monaco/" target="_blank"><img class="align-svg footer-icon-social" src="images/instagram-red.svg"></a>
+        </div>
+
+    </footer>
+    <div class="copyright-wrap">
+        © 2020 AU PETIT MARCHÉ
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        var sections = $('.scroll-section');
+        var nav = $('.menu-items-list');
+        var nav_height = 100; // HEADER HØJDE
+        $(window).on('scroll', function() {
+            var cur_pos = $(this).scrollTop();
+
+            sections.each(function() {
+                var top = $(this).offset().top - nav_height,
+                    bottom = top + $(this).outerHeight();
+
+                if (cur_pos >= top && cur_pos <= bottom) {
+                    if (!$(this).hasClass('active')) {
+                        nav.find('li').removeClass('active');
+                        sections.removeClass('active');
+
+                        var navItem = $(this).attr('data-scroll-nav');
+                        nav.find('.' + navItem).addClass('active');
+                        $(this).addClass('active');
+                    }
+                }
+            });
+        });
+
+    </script>
+
+    <script src="pop-up.js"></script>
+
+
+
+
+
+</body>
+
+</html>
