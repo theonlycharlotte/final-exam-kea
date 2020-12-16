@@ -521,6 +521,51 @@ h1 {
 
 /*---COIN BURGER SECTION BEGIN---> */
 
+/*FLEXBOX start*/
+
+.flex-section {
+	display: flex;
+}
+
+section.reversed {
+	flex-direction: row-reverse;
+}
+
+.col-1 {
+	height: auto;
+	width: 50vw;
+    overflow: hidden;
+
+
+}
+.col-2 {
+	background: #DBD8D8;
+	height: auto;
+	width: 50vw;
+}
+
+@media screen and (max-width: 1024px) {
+	section {
+			flex-wrap: wrap;
+	}
+
+	section.reversed {
+		flex-direction: row;
+	}
+
+	.col-1, .col-2 {
+			width: 100vw;
+		}
+
+    .col-1 {
+        height: 46vh;
+    }
+}
+
+
+/*FLEXBOX end*/
+
+
 #coin-burger {
     height: fit-content;
     display: grid;
