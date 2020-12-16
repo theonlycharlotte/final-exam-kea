@@ -51,7 +51,8 @@
 @media (max-width: 640px) {
 
     #promo-hero {
-        background-image: url(images/mobile-bg-landing-page.jpg)
+        background-image: url(images/mobile-bg-landing-page.jpg);
+        background-attachment: scroll;
     }
 
     #promo-hero div {
@@ -194,6 +195,7 @@
         background-image: url(images/mobile-bg-landing-page.jpg);
         height: auto;
         padding-bottom: 10vh;
+        background-attachment: scroll;
     }
 
     #promo-discover-menu .big-header {
