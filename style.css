@@ -115,7 +115,7 @@ svg path:hover {
     text-align: center;
     padding-top: 70px;
     padding-bottom: 70px;
-        background-color: white;
+    background-color: white;
     /*    background-image: url("images/4-post.jpg");*/
     /*    background-size: cover;*/
 }
@@ -286,13 +286,13 @@ h1 {
 }
 
 .burger-svgs-wrapper {
-    width: 16vw;
+    width: 15vw;
     margin: 0 auto;
 
 }
 
 .burger-svgs {
-    width: 16vw;
+    width: 15vw;
 }
 
 /*---HERO SECTION TABLET MEDIA QUERY BEGIN---*/
@@ -524,38 +524,40 @@ h1 {
 /*FLEXBOX start*/
 
 .flex-section {
-	display: flex;
+    display: flex;
 }
 
 section.reversed {
-	flex-direction: row-reverse;
+    flex-direction: row-reverse;
 }
 
 .col-1 {
-	height: auto;
-	width: 50vw;
+    height: auto;
+    width: 50vw;
     overflow: hidden;
 
 
 }
+
 .col-2 {
-	background: #DBD8D8;
-	height: auto;
-	width: 50vw;
+    background: #DBD8D8;
+    height: auto;
+    width: 50vw;
 }
 
 @media screen and (max-width: 1024px) {
-	section {
-			flex-wrap: wrap;
-	}
+    section {
+        flex-wrap: wrap;
+    }
 
-	section.reversed {
-		flex-direction: row;
-	}
+    section.reversed {
+        flex-direction: row;
+    }
 
-	.col-1, .col-2 {
-			width: 100vw;
-		}
+    .col-1,
+    .col-2 {
+        width: 100vw;
+    }
 
     .col-1 {
         height: 46vh;
@@ -759,6 +761,10 @@ section.reversed {
 
 .promo-banner div span {
     font-weight: 500;
+}
+
+.learn-button-wrap {
+    display: inline-block;
 }
 
 .promo-banner div a {
@@ -1244,6 +1250,7 @@ section.reversed {
     display: grid;
     width: 100vw;
     padding-top: 12vh;
+    padding-bottom: 4vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
         "g1 g2 g2 g2";
@@ -1264,6 +1271,9 @@ section.reversed {
         background-color: #EEEEEE;
         width: 100vw;
         z-index: 5;
+        -webkit-box-shadow: 0px 2px 15px -1px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 2px 15px -1px rgba(0, 0, 0, 0.3);
+        padding-top: 5vh;
     }
 }
 
@@ -1590,47 +1600,79 @@ footer div a {
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1000; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1000;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 50%; /* Could be more or less, depending on screen size */
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
 .close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
+/*---Delivery section---*/
 
+#delivery-section {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    background-color: #9C3535;
+    color: white;
+}
 
+.delivery-grid {
+    width: 75vw;
+    display: grid;
+    grid-template-columns: repeat(3, 25vw);
+    margin: 0 auto;
+}
 
+.delivery-grid div {
+    text-align: center;
+}
 
+@media (max-width: 768px) {
 
+    .delivery-grid {
+        width: 80vw;
+        display: grid;
+        grid-template-columns: repeat(1, 80vw);
+        margin: 0 auto;
+    }
 
-
-
+}
